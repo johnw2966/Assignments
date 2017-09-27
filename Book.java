@@ -11,6 +11,7 @@ public class Book {
     public String getTitle(){
         return title;
     }
+
     public float getPrice(){
         return price;
     }
@@ -56,6 +57,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return String.format("Title %-20s ISBN %-20s",getTitle(),getIsbn());
+        return String.format("Title: %-20s \nISBN: %-20s \nPrice:  €%3.2f \nPages: %d\n",
+                getTitle(),getIsbn(),getPrice(),getPages());
     }
 }
